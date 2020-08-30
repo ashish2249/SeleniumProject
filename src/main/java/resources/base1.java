@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class base1 {
 public WebDriver driver;
@@ -23,6 +24,12 @@ public WebDriver initializeDriver() throws IOException
 	{
 		System.setProperty("webdriver.chrome.driver","F:\\Software\\chromedriver.exe");
 		driver= new ChromeDriver();
+		
+	}
+	else if(browserName.equals("firefox"))
+	{
+		System.setProperty("webdriver.gecko.driver","F:\\Software\\geckodriver\\geckodriver.exe");
+		driver= new FirefoxDriver();
 		
 	}
 	
