@@ -22,7 +22,7 @@ public class HomePage1 extends base1{
 	    LoginPage lp = new LoginPage(driver);
 	    lp.getEmail().sendKeys("ashish");
 	    lp.getPassword().sendKeys("1234");
-	    
+	    lp.loginButton().click();
 	    
 	    
 	    

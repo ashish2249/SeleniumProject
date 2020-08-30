@@ -10,6 +10,7 @@ public class LoginPage {
 	
 	By email = By.cssSelector("[id='user_email']");
 	By password = By.cssSelector("[id='user_password']");
+	By login = By.cssSelector("[type='submit']");
 	
 	public LoginPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -28,4 +29,9 @@ public WebElement getPassword()
 	{
 		return driver.findElement(password);
 	}
+
+public WebElement loginButton()
+{
+	return driver.findElement(login);
+}
 }
