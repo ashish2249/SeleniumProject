@@ -1,5 +1,6 @@
 package resources;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -8,14 +9,17 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class base1 {
 public WebDriver driver;
+public Properties prop;
 	
 public WebDriver initializeDriver() throws IOException
 
 {
-	Properties prop = new Properties();
+	prop = new Properties();
 	FileInputStream fis = new FileInputStream("C:\\Users\\akgup\\eclipse-workspace\\E2EProject1\\src\\main\\java\\resources\\data1.properties");	
 	prop.load(fis);
 	String browserName = prop.getProperty("browser");
@@ -33,7 +37,7 @@ public WebDriver initializeDriver() throws IOException
 		
 	}
 	
-	 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	return driver;
 	
 	}

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7465" started-at="2020-08-30T18:22:49Z" finished-at="2020-08-30T18:22:56Z">
+  <suite name="Default suite" duration-ms="7542" started-at="2020-09-01T18:43:40Z" finished-at="2020-09-01T18:43:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7465" started-at="2020-08-30T18:22:49Z" finished-at="2020-08-30T18:22:56Z">
+    <test name="Default test" duration-ms="7542" started-at="2020-09-01T18:43:40Z" finished-at="2020-09-01T18:43:47Z">
       <class name="Academy1.HomePage1">
-        <test-method status="PASS" signature="basepageNavigation()[pri:0, instance:Academy1.HomePage1@448ff1a8]" name="basepageNavigation" duration-ms="7453" started-at="2020-08-30T23:52:49Z" finished-at="2020-08-30T23:52:56Z">
+        <test-method status="PASS" signature="basepageNavigation()[pri:0, instance:Academy1.HomePage1@198b6731]" name="basepageNavigation" duration-ms="7529" started-at="2020-09-02T00:13:40Z" finished-at="2020-09-02T00:13:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basepageNavigation -->
